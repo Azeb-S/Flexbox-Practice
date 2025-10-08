@@ -1,0 +1,293 @@
+/* 
+TODO: Add styles to match the layout in the image.
+Note: you should only need to use flexbox properties and margin/padding to create the layout.
+*/
+
+body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    /* prevents horizontal scrolling */
+}
+
+
+/* For screens wider than 1024px (desktop) */
+
+@media (min-width: 1025px) {
+    .card-container {
+        max-width: 100%;
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        align-content: center;
+        justify-content: space-between;
+        align-items: stretch;
+        gap: 1rem;
+    }
+    .features {
+        max-width: 100%;
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        align-content: center;
+        justify-content: space-around;
+        align-items: stretch;
+        gap: 1rem;
+    }
+    .card {
+        padding: .9rem;
+        border-radius: 8px;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    }
+    header {
+        max-width: 100%;
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        align-content: stretch;
+        justify-content: space-around;
+        align-items: anchor-center;
+        gap: 2rem
+    }
+    nav a {
+        padding: .7rem;
+        margin: 1rem
+    }
+    .feature-item {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-content: space-around;
+        justify-content: space-around;
+        align-items: center;
+    }
+    .feature-item p {
+        width: 90%;
+        text-align: center;
+    }
+    .footer-content {
+        max-width: 100%;
+        width: 100%;
+        display: flex;
+        flex-wrap: nowrap;
+        align-content: center;
+        justify-content: space-evenly;
+        align-items: stretch;
+    }
+    .footer-section {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: inherit;
+        align-content: space-around;
+        justify-content: space-evenly;
+        align-items: flex-start;
+        margin: .3rem;
+    }
+    .footer-section p {
+        width: 70%;
+    }
+    .footer-content .footer-section {
+        padding: .7rem;
+        margin: auto;
+    }
+}
+
+
+/* 
+Challenge: Use flexbox in media queries to create a responsive layout 
+*/
+
+
+/* For screens 600px wide or less (mobile) */
+
+@media (max-width: 600px) {
+    html,
+    body {
+        margin: 0;
+        padding: 0;
+        overflow-x: hidden;
+        /* prevents left-right scroll */
+        width: 100%;
+    }
+    .card-container {
+        max-width: 100%;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        align-content: center;
+        justify-content: space-between;
+        align-items: stretch;
+        gap: 1rem;
+    }
+    .card-container .card {
+        display: flex;
+        flex-direction: column;
+        align-content: stretch;
+        justify-content: space-evenly;
+        align-items: stretch;
+    }
+}
+
+.features {
+    max-width: 100%;
+    width: 100%;
+    display: flex;
+    flex-wrap: nowrap;
+    align-content: center;
+    justify-content: space-evenly;
+    align-items: stretch;
+    gap: 1rem;
+    flex-direction: column;
+}
+
+.card {
+    padding: .9rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+header {
+    max-width: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-content: stretch;
+    justify-content: space-around;
+    align-items: anchor-center;
+    margin: .3rem;
+}
+
+nav a {
+    padding: .7rem;
+    margin: .1rem
+}
+
+.user-actions button {
+    margin: .3rem;
+}
+
+.feature-item {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: space-around;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.feature-item p {
+    width: 90%;
+    text-align: center;
+}
+
+.footer-content {
+    max-width: 100%;
+    width: 100%;
+    display: flex;
+    flex-wrap: nowrap;
+    align-content: stretch;
+    justify-content: space-evenly;
+    align-items: stretch;
+}
+
+.footer-section {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: inherit;
+    align-content: space-around;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    margin: .3rem;
+}
+
+.footer-section p {
+    width: 70%;
+}
+
+.footer-content .footer-section {
+    padding: .7rem;
+    margin: auto;
+}
+
+
+/* For screens 601px to 1024px (tablet) */
+
+@media (min-width: 601px) and (max-width: 1024px) {
+    .card-container {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        align-content: center;
+        justify-content: space-between;
+        align-items: stretch;
+        gap: 1rem;
+    }
+    .features {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        align-content: center;
+        justify-content: space-around;
+        align-items: stretch;
+        gap: 1rem;
+    }
+    .card {
+        padding: .9rem;
+        border-radius: 8px;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    }
+    header {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        align-content: stretch;
+        justify-content: space-around;
+        align-items: anchor-center;
+        gap: 2rem;
+        margin: 1rem;
+    }
+    nav a {
+        padding: .7rem;
+        margin: 1rem
+    }
+    .feature-item {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-content: space-around;
+        justify-content: space-around;
+        align-items: center;
+    }
+    .feature-item p {
+        width: 90%;
+        text-align: center;
+    }
+    .footer-content {
+        display: flex;
+        flex-wrap: nowrap;
+        align-content: stretch;
+        justify-content: space-evenly;
+        align-items: stretch;
+    }
+    .footer-section {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: inherit;
+        align-content: space-around;
+        justify-content: space-evenly;
+        align-items: flex-start;
+        margin: .3rem;
+    }
+    .footer-section p {
+        width: 70%;
+    }
+    .footer-content .footer-section {
+        padding: .7rem;
+        margin: auto;
+    }
+}
