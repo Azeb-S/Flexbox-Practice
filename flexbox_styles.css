@@ -58,7 +58,7 @@ body {
     }
     .feature-item {
         display: flex;
-        flex-direction: column;
+        flex-direction: row;
         flex-wrap: wrap;
         align-content: space-around;
         justify-content: space-around;
