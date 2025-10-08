@@ -103,7 +103,7 @@ Challenge: Use flexbox in media queries to create a responsive layout
 
 /* For screens 600px wide or less (mobile) */
 
-@media (max-width: 500px) {
+@media (max-width: 600px) {
     html,
     body {
         margin: 0;
